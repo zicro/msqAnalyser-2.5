@@ -1,0 +1,7 @@
+{
+  "name": "Remix: Mosquée Data Analyser v2.5",
+  "description": "Analyseur de données d\u0027inventaire des mosquées marocaines avec statistiques par commune, validation de coordonnées et tableaux de bord.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

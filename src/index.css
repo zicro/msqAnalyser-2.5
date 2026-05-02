@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-tahoma: "Tahoma", "Segoe UI", sans-serif;
+}
+
+@layer utilities {
+  .font-tahoma {
+    font-family: var(--font-tahoma);
+  }
+}
+
+@media print {
+  .no-print, 
+  header, 
+  nav, 
+  footer, 
+  .upload-section,
+  button,
+  .Card.no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+    font-family: "Tahoma", sans-serif !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .print-container {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    display: block !important;
+    visibility: visible !important;
+    background: white !important;
+  }
+
+  /* Ensure the container is the only thing visible if needed */
+  /* This is a more robust way to hide everything else */
+  body > *:not(main),
+  main > *:not(.animate-in),
+  .animate-in > *:not(.print-container) {
+    display: none !important;
+  }
+
+  .print-container, .print-container * {
+    visibility: visible !important;
+  }
+
+  /* Reset dark mode for print */
+  .dark {
+    background: white !important;
+    color: black !important;
+  }
+}
