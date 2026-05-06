@@ -158,9 +158,9 @@ export default function App() {
           <section className="mb-8">
             <Card className="p-8 border-dashed border-2 flex flex-col items-center justify-center text-center">
               <Upload className="w-12 h-12 text-emerald-600 mb-4" />
-              <h2 className="text-xl font-bold mb-2">Importer des données JSON</h2>
+              <h2 className="text-xl font-bold mb-2">Importer des données xlsx</h2>
               <p className="text-zinc-500 mb-6 max-w-md">
-                Sélectionnez un ou plusieurs fichiers JSON contenant l'inventaire des mosquées.
+                Sélectionnez un fichier xlsx contenant l'inventaire des mosquées.
               </p>
               <input 
                 type="file" 
