@@ -170,6 +170,7 @@ export const NUMERIC_FIELD_THRESHOLDS: Record<string, Threshold> = {
   "nombre_salle_de_prière_hommes": { value: 2, operator: '>' },
   "nombre_salle_de_prière_femme": { value: 1, operator: '>' },
   "surface_salle_de_prière_femme": { value: 500, operator: '<' },
+  "surface_salle_de_prière_hommes": { value: 500, operator: '<' },
   "nombre_maqsura": { value: 1, operator: '>' },
   "surface_maqsura": { value: 100, operator: '>' },
   "nombre_latrines_homme": { value: 10, operator: '>' },
