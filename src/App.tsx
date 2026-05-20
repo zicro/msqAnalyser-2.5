@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Mosque, CommuneStats, NUMERIC_FIELD_THRESHOLDS, Threshold } from './types';
 import { calculateStats, exportToCSV, validateCoordinate, parseMosqueFile } from './utils';
 import { Dashboard } from './components/Dashboard';
@@ -134,6 +135,7 @@ export default function App() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
+      <Analytics />
       <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 font-sans transition-colors">
         {/* Header */}
         <header className="sticky top-0 z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800">
